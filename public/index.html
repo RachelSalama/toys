@@ -43,21 +43,21 @@
                         data-bs-parent="#accordionFlushExample" style="">
                         <div class="accordion-body">
                             <li class="pt-2 form-inline">Get 10 toys by page number:<a
-                                    class="nav-link ps-1 d-inline-block" href="http://localhost:3000/api/v1/toys?page=1"
+                                    class="nav-link ps-1 d-inline-block" href="/api/v1/toys?page=1"
                                     target="_blank">/toys?page=number</a><span> (GET)</span>
                             </li>
                             <li class="pt-2 form-inline">Search 10 toys by name or info in each page:<a
                                     class="nav-link ps-1 d-inline-block"
-                                    href="http://localhost:3000/api/v1/toys/search?page=1&s=car"
+                                    href="/api/v1/toys/search?page=1&s=green"
                                     target="_blank">/toys?page=number&s=nameOrInfo</a><span> (GET)</span>
                             </li>
                             <li class="pt-2 form-inline">Get 10 toys by category in each page<a
                                     class="nav-link ps-1 d-inline-block"
-                                    href="http://localhost:3000/api/v1/toys/category/cars?page=1"
+                                    href="/api/v1/toys/category/outdoor games?page=1"
                                     target="_blank">/toys?s=category</a><span> (GET)</span>
                             </li>
                             <li class="pt-2 form-inline">Get toy by id<a class="nav-link ps-1 d-inline-block"
-                                    href="http://localhost:3000/api/v1/toys/single/656c59827621aac3d4660eca"
+                                    href="/api/v1/toys/single/656dbdedc2fcac70a67d838e"
                                     target="_blank">/toys/single/:id</a><span> (GET)</span>
                             </li>
                         </div>
@@ -75,8 +75,7 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <div class="pt-2 form-inline">Add toy - (only for register user - must send user's
-                                auth-token through headers):<a class="nav-link ps-1 d-inline-block"
-                                    href="http://localhost:3000/api/v1/toys" target="_blank">/toys</a><span>
+                                auth-token through headers):/toys<span>
                                     (POST)</span>
                             </div>
                             <li class="pt-2 form-inline">name<span class="ps-2"> (required)</span></li>
@@ -100,8 +99,8 @@
                             aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <div class="pt-2 form-inline">Edit product - (only for register user - must send user's
-                                    auth-token through headers):<a class="nav-link ps-1 d-inline-block"
-                                        href="http://localhost:3000/api/v1/toys">/toys/:_id (toy)</a><span>
+                                    auth-token through headers):
+                                        /toys/:_id (toy)<span>
                                         (PATCH)</span>
                                 </div>
                                 <li class="pt-2 form-inline">name <span class="ps-2"> (required)</span></li>
@@ -125,8 +124,7 @@
                                 aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <div class="pt-2 form-inline">Delete toy - (only for register user - must send
-                                        user's auth-token through headers):<a class="nav-link ps-1 d-inline-block"
-                                            href="http://localhost:3000/api/v1/toys">/toys/:_id (toy)</a><span>
+                                        user's auth-token through headers):/toys/:_id (toy)<span>
                                             (DELETE)</span>
                                     </div>
                                     <li class="pt-2 form-inline">name<span class="ps-2"> (required)</span></li>
@@ -150,8 +148,7 @@
                             <div id="flush-collapseFive" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    <div class="pt-2 form-inline">Sign Up:<a class="nav-link ps-1 d-inline-block"
-                                            href="http://localhost:3000/api/v1/users">/users</a><span>
+                                    <div class="pt-2 form-inline">Sign Up: /users<span>
                                             (POST)</span>
                                     </div>
                                     <li class="pt-2 form-inline">user<span class="ps-2"> (required)</span></li>
@@ -174,8 +171,7 @@
                         <div id="flush-collapseSix" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <div class="pt-2 form-inline">Sign Up:<a
-                                        class="http://localhost:3000/api/v1/users/login">/users/login</a><span>
+                                <div class="pt-2 form-inline">Sign Up: /users/login<span>
                                         (POST)</span>
                                 </div>
                                 <li class="pt-2 form-inline">email<span class="ps-2"> (required)</span></li>

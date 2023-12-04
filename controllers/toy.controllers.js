@@ -20,7 +20,7 @@ exports.getToysByCat = async (req, res, next) => {
     const { params, query } = req;
     const perPage =10;
     const skip = (query.page -1) * perPage;
-    const toys = await Toy.find({ category: params.catname }).skip(skip).limit(perPage).populate('user_id').select("-__v");
+    const toys = await Toy.find({ category: params.catname }).skip(skip).limit(perPage).select("-__v");
     res.send(toys);
 };
 
